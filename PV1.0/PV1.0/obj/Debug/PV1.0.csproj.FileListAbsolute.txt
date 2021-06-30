@@ -1,0 +1,17 @@
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\PV1.0.exe.config
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\PV1.0.exe
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\PV1.0.pdb
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.csproj.AssemblyReference.cache
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1._0.Properties.Resources.resources
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.csproj.GenerateResource.cache
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.csproj.CoreCompileInputs.cache
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.exe
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.pdb
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\MySql.Data.dll
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\Negocios.dll
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\Datos.dll
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\Negocios.pdb
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\MySql.Data.xml
+C:\Users\treec\source\repos\PV1.0\PV1.0\bin\Debug\Datos.pdb
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1._0.Form1.resources
+C:\Users\treec\source\repos\PV1.0\PV1.0\obj\Debug\PV1.0.csproj.CopyComplete
