@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+
 
 namespace Datos
 {
     public class ConexionSQL
     {
         private const string V = "and contraseña ='";
-        static string conexionstring = "server = localhost:3306;database= PuntodeVenta;" +
-            "integrated security=true";
+        static string conexion = "SERVER = 127.0.0.1;PORT=3306;DATABASE = PuntodeVenta;UID=root;PASSWORD=;";
 
-        SqlConnection con = new SqlConnection(conexionstring);
+        MySqlConnection con = new MySqlConnection(conexion);
 
         public int consultalogin(string Usuario, String Contrasena)
         {
@@ -22,7 +21,7 @@ namespace Datos
             con.Open();
             string Query = "Select count(*)from persona where usuario =  '" + Usuario + "' " +
                 " and contraseña= '" + Contrasena + "'";
-            SqlCommand cmd = new SqlCommand(Query, con);
+            MySqlCommand cmd = new MySqlCommand(Query, con);
             count = Convert.ToInt32(cmd.ExecuteScalar());
             con.Close();
             return count;

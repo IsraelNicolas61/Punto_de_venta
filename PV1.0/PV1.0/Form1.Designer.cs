@@ -51,6 +51,7 @@ namespace PV1._0
             this.txt_contrasena.Name = "txt_contrasena";
             this.txt_contrasena.Size = new System.Drawing.Size(253, 20);
             this.txt_contrasena.TabIndex = 1;
+            this.txt_contrasena.UseSystemPasswordChar = true;
             // 
             // label1
             // 
