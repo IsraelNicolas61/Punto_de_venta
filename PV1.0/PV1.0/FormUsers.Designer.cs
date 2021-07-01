@@ -59,7 +59,7 @@ namespace PV1._0
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 341);
+            this.label1.Location = new System.Drawing.Point(9, 341);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
@@ -107,9 +107,9 @@ namespace PV1._0
             // 
             // txt_nom
             // 
-            this.txt_nom.Location = new System.Drawing.Point(11, 364);
+            this.txt_nom.Location = new System.Drawing.Point(12, 364);
             this.txt_nom.Name = "txt_nom";
-            this.txt_nom.Size = new System.Drawing.Size(161, 20);
+            this.txt_nom.Size = new System.Drawing.Size(160, 20);
             this.txt_nom.TabIndex = 4;
             // 
             // txt_apellido

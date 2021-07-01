@@ -35,5 +35,13 @@ namespace PV1._0
         {
             Application.Exit();
         }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inventario v2 = new Inventario();
+            this.Hide();
+            v2.ShowDialog();
+            this.Show();
+        }
     }
 }

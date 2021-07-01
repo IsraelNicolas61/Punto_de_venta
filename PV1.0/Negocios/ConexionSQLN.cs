@@ -37,9 +37,7 @@ namespace Negocios
         }
         public int EliminarUsuario(string user)
         {
-            int flag = 0;
-            
-            return flag;
+           return cn.EliminarUsuario(user);
         }
 
 

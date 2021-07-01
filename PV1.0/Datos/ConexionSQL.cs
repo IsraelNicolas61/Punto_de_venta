@@ -43,7 +43,8 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "UPDATE persona SET contraseña= ('" + pass+"') WHERE usuario = ('"+user+"')";
+            string query = "UPDATE persona SET nombre ='" + nom + "', apellido = '" + apel + "',usuario = '" + user + "' where contraseña= '"+pass+"'" ;
+            
             MySqlCommand cmd = new MySqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -53,7 +54,7 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "DELETE FROM `persona` WHERE `persona`.`usuario` = ('" + user + "')";
+            string query = "DELETE FROM persona WHERE usuario = '"+user+"'";
             MySqlCommand cmd = new MySqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();

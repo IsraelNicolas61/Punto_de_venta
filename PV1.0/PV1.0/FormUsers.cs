@@ -46,14 +46,22 @@ namespace PV1._0
 
         private void bnt_EU_Click(object sender, EventArgs e)
         {
+            cn.EliminarUsuario(txt_user.Text);
             dataGridView1.DataSource = cn.ConsultaDT();
+            
 
         }
 
         private void btn_MU_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = cn.ConsultaDT();
             cn.ModificarUsuario(txt_nom.Text, txt_apellido.Text, txt_user.Text, txt_pass.Text);
+            dataGridView1.DataSource = cn.ConsultaDT();
+            
+        }
+
+        private void txt_id_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
