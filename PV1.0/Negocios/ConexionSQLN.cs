@@ -25,6 +25,10 @@ namespace Negocios
         {
             return cn.ConsultausuariosDG();
         }
+        public DataTable ConsultaDTV()
+        {
+            return cn.ConsultaventasDG();
+        }
 
         public int InsertarUsuario(string nom, string apel, string user, string pass)
         {   
@@ -40,7 +44,10 @@ namespace Negocios
            return cn.EliminarUsuario(user);
         }
 
-
+        public int InsertarVenta(string prod, string cant, string precio, string cod)
+        {
+            return cn.InsertarVenta(prod,cant, precio, cod);
+        }
 
 
 

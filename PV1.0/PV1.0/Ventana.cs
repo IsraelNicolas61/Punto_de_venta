@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocios;
 
 namespace PV1._0
 {
     public partial class Ventana : Form
     {
+        ConexionSQLN cn = new ConexionSQLN();
         public Ventana()
         {
             InitializeComponent();
+            dataGridView1.DataSource = cn.ConsultaDTV();
         }
 
         private void Ventana_Load(object sender, EventArgs e)
@@ -42,6 +45,17 @@ namespace PV1._0
             this.Hide();
             v2.ShowDialog();
             this.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+            cn.InsertarVenta(txt_producto.Text,txt_cantidad.Text,txt_precio.Text,txt_codigo.Text);
+            dataGridView1.DataSource = cn.ConsultaDTV();
         }
     }
 }

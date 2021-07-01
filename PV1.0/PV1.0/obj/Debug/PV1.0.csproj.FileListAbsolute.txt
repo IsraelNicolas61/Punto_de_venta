@@ -51,3 +51,4 @@ C:\Users\treec\Documents\GitHub\Punto_de_venta\PV1.0\PV1.0\obj\Debug\PV1.0.cspro
 C:\Users\treec\Documents\GitHub\Punto_de_venta\PV1.0\PV1.0\obj\Debug\PV1.0.exe
 C:\Users\treec\Documents\GitHub\Punto_de_venta\PV1.0\PV1.0\obj\Debug\PV1.0.pdb
 C:\Users\treec\Documents\GitHub\Punto_de_venta\PV1.0\PV1.0\obj\Debug\PV1._0.FormUsers.resources
+C:\Users\treec\Documents\GitHub\Punto_de_venta\PV1.0\PV1.0\obj\Debug\PV1._0.Inventario.resources

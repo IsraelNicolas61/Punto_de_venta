@@ -111,6 +111,7 @@ namespace PV1._0
             this.txt_nom.Name = "txt_nom";
             this.txt_nom.Size = new System.Drawing.Size(160, 20);
             this.txt_nom.TabIndex = 4;
+            this.txt_nom.TextChanged += new System.EventHandler(this.txt_nom_TextChanged);
             // 
             // txt_apellido
             // 

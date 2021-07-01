@@ -63,5 +63,10 @@ namespace PV1._0
         {
 
         }
+
+        private void txt_nom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
