@@ -71,7 +71,7 @@ namespace Datos
 
             return table;
         }
-
+        //insercion de ventas del dia
         public int InsertarVenta(string prod, string cant, string precio, string cod)
         {
             int flag = 0;
@@ -93,6 +93,50 @@ namespace Datos
 
             return table;
         }
+        //consulta del inventario
+        public DataTable ConsultainventarioDG()
+        {
+            string query = "select * from inventario";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            MySqlDataAdapter data = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            data.Fill(table);
 
+            return table;
+        }
+
+        //sql para insertar datos en inventario 
+        public int InsertarInventario(string producto, string categoria, string precio, string cantidad)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into inventario (`producto`, `categoria`, `precio`, `cantidad`) values ('" + producto + "','" + categoria + "','" + precio+ "','" + cantidad + "')";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
+        public int ModificarInventario(string producto, string categoria, string precio, string cantidad)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "UPDATE inventario SET cantidad ='" + cantidad + "', categoria = '" + categoria + "',precio = '" + precio + "' where producto= '" + producto + "'";
+
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+        public int EliminarInventario(string producto)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "DELETE FROM inventario WHERE producto = '" + producto + "'";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
     }
 }

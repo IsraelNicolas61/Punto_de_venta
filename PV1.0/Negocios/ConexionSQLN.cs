@@ -29,7 +29,11 @@ namespace Negocios
         {
             return cn.ConsultaventasDG();
         }
-
+        public DataTable ConsultaDTI()
+        {
+            return cn.ConsultainventarioDG();
+        }
+        //metodos de usuarios
         public int InsertarUsuario(string nom, string apel, string user, string pass)
         {   
             return cn.InsertarUsuario(nom,apel,user,pass);
@@ -43,14 +47,26 @@ namespace Negocios
         {
            return cn.EliminarUsuario(user);
         }
-
+       //metodo de ventas
         public int InsertarVenta(string prod, string cant, string precio, string cod)
         {
             return cn.InsertarVenta(prod,cant, precio, cod);
         }
+        //metodo de inventario
 
+        public int InsertarInventario(string producto, string categoria, string precio, string cantidad)
+        {
+            return cn.InsertarInventario(producto,categoria,precio,cantidad);
+        }
 
-
+        public int ModificarInventario(string producto, string categoria, string precio, string cantidad)
+        {
+            return cn.InsertarInventario(producto, categoria, precio,cantidad);
+        }
+        public int EliminarInventario(string producto)
+        {
+            return cn.EliminarInventario(producto);
+        }
 
 
 
