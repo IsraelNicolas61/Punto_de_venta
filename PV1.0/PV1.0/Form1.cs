@@ -33,9 +33,15 @@ namespace PV1._0
 
         private void bnt_entrar_Click(object sender, EventArgs e)
         {
-            if(cn.conSQL(txt_usuario.Text,txt_contrasena.Text)==1)
+            if (cn.conSQL(txt_usuario.Text, txt_contrasena.Text) == 1)
             {
-                MessageBox.Show("El usuario a sido encontrado");
+                //MessageBox.Show("El usuario a sido encontrado");
+
+                this.Hide();
+
+                Ventana v1 = new Ventana();
+                v1.Show();
+
 
             }
             else
