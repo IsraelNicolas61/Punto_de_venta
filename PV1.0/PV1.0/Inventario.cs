@@ -47,5 +47,10 @@ namespace PV1._0
             cn.EliminarInventario(txt_producto.Text);
             dataGridView1.DataSource = cn.ConsultaDTI();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

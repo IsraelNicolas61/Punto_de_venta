@@ -34,8 +34,8 @@ namespace PV1._0
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_menu_usuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_Salir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -87,6 +87,13 @@ namespace PV1._0
             this.btn_menu_usuarios.Text = "Usuarios";
             this.btn_menu_usuarios.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
+            // inventarioToolStripMenuItem
+            // 
+            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.inventarioToolStripMenuItem.Text = "Inventario";
+            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
+            // 
             // btn_Salir
             // 
             this.btn_Salir.Location = new System.Drawing.Point(693, 415);
@@ -96,13 +103,6 @@ namespace PV1._0
             this.btn_Salir.Text = "Cerrar";
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // inventarioToolStripMenuItem
-            // 
-            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.inventarioToolStripMenuItem.Text = "Inventario";
-            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -125,7 +125,7 @@ namespace PV1._0
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 153);
+            this.label1.Location = new System.Drawing.Point(1, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 4;
@@ -169,7 +169,7 @@ namespace PV1._0
             // 
             // btn_guardar
             // 
-            this.btn_guardar.Location = new System.Drawing.Point(693, 334);
+            this.btn_guardar.Location = new System.Drawing.Point(491, 374);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(75, 51);
             this.btn_guardar.TabIndex = 9;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//Datos es la class que se programo para llamar las consultas SQL
 using Datos;
 using System.Data;
 

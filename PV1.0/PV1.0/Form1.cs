@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//manda llamar la clase negocios 
 using Negocios;
 
 namespace PV1._0

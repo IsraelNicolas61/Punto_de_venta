@@ -1,21 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//Librerias para los metodos de conexion y consulta
 using MySql.Data.MySqlClient;
+using System.Data;
 
 
 namespace Datos
 {
     public class ConexionSQL
     {
+        //aqui se hace la conexion de c# a mysql (Xampp)
+        //mysql-connector-net-6.9.9.msi
         private const string V = "and contraseña ='";
         static string conexion = "SERVER = 127.0.0.1;PORT=3306;DATABASE = PuntodeVenta;UID=root;PASSWORD=;";
 
         MySqlConnection con = new MySqlConnection(conexion);
+
         // Sql para ventana de login
+
         public int consultalogin(string Usuario, String Contrasena)
         {
             int count;
